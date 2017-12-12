@@ -8,6 +8,6 @@ use Plenty\Plugin\Routing\Router;
 class HelloWorldRouteServiceProvider extends RouteServiceProvider {
 
     public function map(Router $router) {
-        $route->get('hello', 'HelloWorld\Controller\ContentController@sayHello');
+        $router->get('hello', 'HelloWorld\Controller\ContentController@sayHello');
     }
 }
